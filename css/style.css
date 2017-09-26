@@ -488,6 +488,7 @@ a.login_reg_form_change_option {
 
 .terms_register_content {
     margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .terms_register_content_item {
@@ -512,4 +513,15 @@ a.login_reg_form_change_option {
 
 .terms_register_content_item p span {
 	font-family: open_sans_bold;
+}
+
+.register_terms_confirmation button {
+    background: #4aa220;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 20px;	
 }
