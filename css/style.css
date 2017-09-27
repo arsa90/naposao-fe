@@ -33,6 +33,10 @@ body {
     *zoom: 1;
 }
 
+.center {
+	text-align: center;
+}
+
 a {
 	text-decoration: none;
 	-webkit-transition: all .2s ease;
@@ -400,7 +404,7 @@ p.job_search_option_triger {
     padding: 0 15px;
 }
 
-.login_reg_form_submit input[type="submit"] {
+.login_reg_form_submit input[type="submit"], .login_reg_form_submit button.submit {
     display: block;
     width: 100%;
     margin: auto;
@@ -524,4 +528,70 @@ a.login_reg_form_change_option {
     border-radius: 5px;
     margin-left: 10px;
     margin-bottom: 20px;	
+}
+
+.login_reg_form_item select{
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    padding: 17px;
+    display: block;
+}
+
+.company_registration_form .login_reg_form_item label{
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.company_registration_form .login_reg_form_item input[type="text"] {
+	width: calc(100% - 30px);
+}
+
+.login_reg_form_item label span {
+	vertical-align: middle;
+}
+
+.login_reg_form_item label input[type="radio"] {
+	margin-left: 8px;
+	margin-bottom: 0;
+	vertical-align: middle;
+}
+
+.company_registration_form .login_reg_form_item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.company_registration_form .login_reg_form_item input {
+	width: auto;
+}
+
+.form_title {
+    margin-bottom: 10px;
+    font-family: open_sans_bold;
+}
+
+.company_type_form_section label {
+	margin: 0 10px;
+}
+
+.company_type_form_section label:first-of-type {
+	margin-left: 0;
+}
+
+.company_registration_form .login_reg_form_submit {
+	border-bottom: none;
+}
+
+.company_registration_form .form_smaller_text label {
+    display: block;
+    font-size: 15px;
+    margin: 0;
+    text-align: left;
+}
+
+.company_registration_form .form_smaller_text label small {
+	display: block;
+	color: #888;	
 }
