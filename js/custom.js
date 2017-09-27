@@ -10,19 +10,12 @@ $(document).ready(function(){
 	});
 
 	// Business sector form selection
-	$("#business_sector_select option").click(function () {           
-	  	var selectedVal = $(this).text();
+	$('#business_sector_select').click(function() {
+		 return !$('#business_sector_select option:selected').remove().appendTo('#business_sector_selected_items');
+		});
+		$('#business_sector_selected_items').click(function() {
+		 return !$('#business_sector_selected_items option:selected').remove().appendTo('#business_sector_select');
+		});
 
-	  	$('ul').append(this)
-	  	$(this).remove();
-	}); 
-
-	$("li").click(function () {           
-	  	var selectedVal = $(this).text();
-
-	  	$('#business_sector_select').append('<option>'+selectedVal+'</option>');
-	  	$(this).remove();
-	}); 
 	// End business sector form selection
 });
-
