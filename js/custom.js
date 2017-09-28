@@ -1,4 +1,16 @@
 $(document).ready(function(){
+
+	// Business sector form selection
+ 	$('#business_sector_select').click(function() {
+ 		 return !$('#business_sector_select option:selected').remove().appendTo('#business_sector_selected_items');
+ 		});
+ 		$('#business_sector_selected_items').click(function() {
+ 		 return !$('#business_sector_selected_items option:selected').remove().appendTo('#business_sector_select');
+ 		});
+
+ 	// End business sector form selection
+
+
 	$('.job_search_option_triger').on('click',function(){
 		console.log('ok')
 		$(this).toggleClass('open').next('.options_checkbox').toggle();
@@ -16,7 +28,7 @@ $(document).ready(function(){
 		$('.second_part_companies_reg').toggleClass('none');
 	});
 
-	// Check 
+	// Check
 
 
 
@@ -29,13 +41,5 @@ $(document).ready(function(){
         }
     });
 
-	// Business sector form selection
-	$('#business_sector_select').click(function() {
-		 return !$('#business_sector_select option:selected').remove().appendTo('#business_sector_selected_items');
-		});
-		$('#business_sector_selected_items').click(function() {
-		 return !$('#business_sector_selected_items option:selected').remove().appendTo('#business_sector_select');
-		});
 
-	// End business sector form selection
 });
